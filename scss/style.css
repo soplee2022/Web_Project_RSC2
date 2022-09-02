@@ -1,0 +1,31 @@
+/* @charset "utf-8" */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  font-size: 100%;
+  font-weight: 200;
+  line-height: 1.7;
+  color: #606060;
+}
+
+a {
+  text-decoration: none;
+  color: #606060;
+}
+a:hover {
+  color: #f1f1f1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}/*# sourceMappingURL=style.css.map */

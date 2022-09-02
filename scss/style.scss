@@ -1,0 +1,61 @@
+/* @charset "utf-8" */
+
+// FONT SETTING
+$base_font_size: 10px;
+$base_line_height: 1;
+$base_letter_spacing: 1px;
+$font-family: 'Montserrat', sans-serif;
+
+// MAIN COLOR
+// 標準色重抓
+$green_light: #dddace;
+$green_dark: #aca691;
+$white: #f1f1f1;
+$gray: #606060;
+
+// BASE SIZE
+$base_line_width: 2px;
+
+// mixin 使用時機：整包樣式都要一樣的時候，減少重複的行為
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+
+// BREAK WIDTH （未來 RWD 使用）
+$break_large: 1024px;
+$break_medium: 768px;
+$break_small: 400px;
+
+
+// all page css
+*{
+    font-family: $font-family
+}
+html,body{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    font-size: 100%;
+    font-weight: 200;
+    line-height: $base_line_height*1.7;
+    color: $gray;
+}
+a{
+    text-decoration: none;
+    color: $gray;
+    // ":hover" 滑鼠指向超連結會變色
+    &:hover{
+        color:$white;
+    }
+}
+img{
+    max-width: 100%;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
