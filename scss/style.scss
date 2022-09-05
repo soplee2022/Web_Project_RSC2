@@ -7,10 +7,11 @@ $base_letter_spacing: 1px;
 $font-family: 'Montserrat', sans-serif;
 
 // MAIN COLOR
-// 標準色重抓
-$green_light: #dddace;
-$green_dark: #aca691;
-$white: #f1f1f1;
+$brown_light: #f0e6dc;
+$brown_dark1: #e6cdb9;
+$white: #ffffff;
+
+$brown_dark2: #b4a091;
 $gray: #606060;
 
 // BASE SIZE
@@ -53,9 +54,23 @@ img{
     max-width: 100%;
 }
 
-
-
 .navbar{
-    display: flex;
-    justify-content: flex-end;
+    font-size: $base_font_size*2;
+    // display: flex;
+    // justify-content: flex-end;
 }
+
+.index-image{
+    @include size(100%,auto);
+    background-image: url(images/index-bg.jpg);
+    background-size: cover;
+    /* 問題：如何修改背景圖寬度？ */
+    background-position: fixed;
+}
+
+// .index-title{
+//     font-size: $base_font_size*2;
+//     display: flex;
+//     position: relative;
+//     margin: 0 auto 0px auto;
+// }

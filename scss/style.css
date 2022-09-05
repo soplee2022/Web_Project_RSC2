@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @charset "utf-8" */
 * {
   font-family: "Montserrat", sans-serif;
@@ -18,7 +19,7 @@ a {
   color: #606060;
 }
 a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 img {
@@ -26,6 +27,14 @@ img {
 }
 
 .navbar {
-  display: flex;
-  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.index-image {
+  width: 100%;
+  height: auto;
+  background-image: url(images/index-bg.jpg);
+  background-size: cover;
+  /* 問題：如何修改背景圖寬度？ */
+  background-position: fixed;
 }/*# sourceMappingURL=style.css.map */
