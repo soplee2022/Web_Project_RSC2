@@ -30,7 +30,8 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- 項目無法置左，下拉選單失效 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-opacity">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -64,17 +65,117 @@
         </div>
     </nav>
 
-    <!-- index image -->
+    <!-- index title -->
     <figure class="text-center">
         <blockquote class="blockquote">
             <p>在分享中見山、見海、見自己</p>
         </blockquote>
         <figcaption class="blockquote-footer">
-            <cite title="Source Title">一個由下班女子組成的讀書會</cite>
+            <cite title="Source Title">期待與你一起認識自己</cite>
         </figcaption>
     </figure>
-    <div>
-        <!-- <p class="index-title">在分享中見山、見海、見自己</p> -->
-        <img class="index-image" src="images/index-bg.jpg" alt="共同導讀首頁圖">
+    <!-- index image -->
+    <img src="/images/index-bg.jpg" class="img-fluid img-fluid-index-bg" alt="共同導讀首頁圖片">
+
+    <!-- index-1 (blog link) -->
+
+    <div class="index-1">
+
+        <figure class="text-center text-index-1">
+            <blockquote class="blockquote">
+                <p>我們讀過的書</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                What we ever read
+                <!-- <cite title="Source Title">Source Title</cite> -->
+            </figcaption>
+        </figure>
+
+        <!-- card -->
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/08.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text card-text-center">This is a longer card with supporting text below as a
+                            natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/02.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text card-text-center">This is a short card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/03.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text card-text-center">This is a longer card with supporting text below as a
+                            natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/04.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text card-text-center">This is a longer card with supporting text below as a
+                            natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- index-2 -->
+
+
+    <!-- index-3 gallery -->
+
+    <div class="index-3">
+        <!-- title 無法置頂、置中（設定都跟 index-1 一樣） -->
+        <figure class="text-center text-index-1">
+            <blockquote class="blockquote">
+                <p>讀書會紀實</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Our gallery
+            </figcaption>
+        </figure>
+
+        <!-- gallery images -->
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <figure class="figure">
+                <img src="images/07.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+            </figure>
+
+            <figure class="figure">
+                <img src="images/10.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+            </figure>
+
+            <figure class="figure">
+                <img src="images/09.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+            </figure>
+
+            <figure class="figure">
+                <img src="images/05.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+            </figure>
+        </div>
+    </div>
+
 </body>

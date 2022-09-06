@@ -54,23 +54,65 @@ img{
     max-width: 100%;
 }
 
+// navbar
 .navbar{
     font-size: $base_font_size*2;
-    // display: flex;
-    // justify-content: flex-end;
 }
 
-.index-image{
-    @include size(100%,auto);
-    background-image: url(images/index-bg.jpg);
-    background-size: cover;
-    /* 問題：如何修改背景圖寬度？ */
-    background-position: fixed;
+.bg-light-opacity {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-// .index-title{
-//     font-size: $base_font_size*2;
-//     display: flex;
-//     position: relative;
-//     margin: 0 auto 0px auto;
-// }
+// index image
+.img-fluid-index-bg {
+    display: flex;
+    position: fixed;
+    top: 0%;
+    // z-index 是用來排 div 順序的，最底層-999，其他依序排列，類似 float，一定要搭配 position
+    z-index: -999;
+}
+
+// index blog link
+.index-1{
+    padding: 5%;
+    background-color: $brown_light;
+}
+
+.text-index-1{
+    margin-bottom: 5%;
+}
+
+$card-height: 100%;
+
+.card{
+    border-radius: 99em 99em 0 0 ;
+    border: none;
+    background-color: $brown_dark1;
+}
+
+.card-img-top{
+    border-radius: 99em 99em 0 0 ;
+}
+
+.card-img-top:hover {
+    display: flex;
+    // display 只是為了 css 不要空著而放的，要記得刪掉
+    // 缺 zoom in 效果
+    // https://mdbootstrap.com/docs/standard/content-styles/hover-effects/
+}
+
+.card-text-center{
+    text-align: center;
+}
+
+// index-3 gallery
+
+.index-3{
+    background-color: $brown_dark1;
+    padding: 5%;
+    display: flex;
+}
+.index-gallery{
+    padding: 0 5% 0 5%;
+}

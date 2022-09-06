@@ -4104,6 +4104,7 @@ fieldset:disabled .btn {
 }
 .card-title {
     margin-bottom: var(--bs-card-title-spacer-y);
+    text-align: center;
 }
 .card-subtitle {
     margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
