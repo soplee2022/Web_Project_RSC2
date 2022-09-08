@@ -70,7 +70,14 @@ img{
     position: fixed;
     top: 0%;
     // z-index 是用來排 div 順序的，最底層-999，其他依序排列，類似 float，一定要搭配 position
-    z-index: -999;
+    z-index: -1;
+}
+
+.index-bg{
+    background-image:url(/images/index-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
 }
 
 // index blog link
@@ -112,6 +119,18 @@ $card-height: 100%;
     background-color: $brown_dark1;
     padding: 5%;
     display: flex;
+}
+
+.index-3-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-3-gallery{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
 }
 .index-gallery{
     padding: 0 5% 0 5%;

@@ -29,66 +29,60 @@
 
 <body>
 
-    <!-- navbar -->
-    <!-- 項目無法置左，下拉選單失效 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light-opacity">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Blog
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="blog.html">自我成長</a></li>
-                            <li><a class="dropdown-item" href="blog.html">情緒＆心理學</a></li>
-                            <li><a class="dropdown-item" href="blog.html">習慣養成</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/booklist.html">Booklist</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="join.html">Join us</a>
-                    </li>
-                </ul>
+    <div class="index-bg">
+    <!-- navbar --><!-- 項目無法置左，下拉選單失效 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light-opacity">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="blog.html">自我成長</a></li>
+                                <li><a class="dropdown-item" href="blog.html">情緒＆心理學</a></li>
+                                <li><a class="dropdown-item" href="blog.html">習慣養成</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/booklist.html">Booklist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="join.html">Join us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- index title -->
-    <figure class="text-center">
-        <blockquote class="blockquote">
-            <p>在分享中見山、見海、見自己</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            <cite title="Source Title">期待與你一起認識自己</cite>
-        </figcaption>
-    </figure>
-    <!-- index image -->
-    <img src="/images/index-bg.jpg" class="img-fluid img-fluid-index-bg" alt="共同導讀首頁圖片">
+        </nav>
+        <!-- index title -->
+        <figure class="text-center bg1">
+            <blockquote class="blockquote">
+                <p>在分享中見山、見海、見自己</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">期待與你一起認識自己</cite>
+            </figcaption>
+        </figure>
+    </div>
 
     <!-- index-1 (blog link) -->
-
     <div class="index-1">
-
         <figure class="text-center text-index-1">
             <blockquote class="blockquote">
                 <p>我們讀過的書</p>
             </blockquote>
             <figcaption class="blockquote-footer">
-                What we ever read
-                <!-- <cite title="Source Title">Source Title</cite> -->
-            </figcaption>
+                What we ever read</figcaption>
         </figure>
 
         <!-- card -->
@@ -145,36 +139,42 @@
 
     <div class="index-3">
         <!-- title 無法置頂、置中（設定都跟 index-1 一樣） -->
-        <figure class="text-center text-index-1">
-            <blockquote class="blockquote">
-                <p>讀書會紀實</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                Our gallery
-            </figcaption>
-        </figure>
+        
+        <div index-3-title>
+            <figure class="text-center ">
+                <blockquote class="blockquote">
+                    <p>讀書會紀實</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Our gallery
+                </figcaption>
+            </figure>
+        </div>
 
         <!-- gallery images -->
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <figure class="figure">
-                <img src="images/07.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
-                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
-            </figure>
 
-            <figure class="figure">
-                <img src="images/10.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
-                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
-            </figure>
+        <div class="index-3-gallery">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <figure class="figure">
+                    <img src="images/07.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                    <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+                </figure>
 
-            <figure class="figure">
-                <img src="images/09.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
-                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
-            </figure>
+                <figure class="figure">
+                    <img src="images/10.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                    <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+                </figure>
 
-            <figure class="figure">
-                <img src="images/05.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
-                <figcaption class="figure-caption text-center">2022.08.03</figcaption>
-            </figure>
+                <figure class="figure">
+                    <img src="images/09.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                    <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+                </figure>
+
+                <figure class="figure">
+                    <img src="images/05.jpeg" class="figure-img img-fluid rounded index-gallery" alt="...">
+                    <figcaption class="figure-caption text-center">2022.08.03</figcaption>
+                </figure>
+            </div>
         </div>
     </div>
 

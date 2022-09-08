@@ -38,7 +38,14 @@ img {
   display: flex;
   position: fixed;
   top: 0%;
-  z-index: -999;
+  z-index: -1;
+}
+
+.index-bg {
+  background-image: url(/images/index-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
 }
 
 .index-1 {
@@ -72,6 +79,18 @@ img {
   background-color: #e6cdb9;
   padding: 5%;
   display: flex;
+}
+
+.index-3-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-3-gallery {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 }
 
 .index-gallery {
