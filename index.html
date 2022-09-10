@@ -30,7 +30,7 @@
 <body>
 
     <div class="index-bg">
-    <!-- navbar --><!-- 項目無法置左，下拉選單失效 -->
+    <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light-opacity">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Logo</a>
@@ -38,12 +38,13 @@
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="about.html">About</a>
                         </li>
-                        <li class="nav-item dropdown">
+                    <!-- 下拉選單失效(需檢查 js/jQ 設定) -->
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Blog
@@ -53,6 +54,9 @@
                                 <li><a class="dropdown-item" href="blog.html">情緒＆心理學</a></li>
                                 <li><a class="dropdown-item" href="blog.html">習慣養成</a></li>
                             </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/booklist.html">Booklist</a>
@@ -132,7 +136,24 @@
         </div>
     </div>
 
-    <!-- index-2 -->
+    <!-- index-2 (reader's feedback)-->
+
+    <!-- 待解決：Grid system 文：圖 = 2:1 -->
+    <div class="d-flex align-items-center">
+        <figure class="text-center diy-imdex-text">
+            <blockquote class="blockquote diy-imdex-text1">
+                <p>「讀書會讓閱讀走進生活，也讓我在閱讀中遇見更好的自己。」</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">Reader Jessy</cite>
+            </figcaption>
+        </figure>
+        <div class="container-fluid diy-index-img">
+            <img src="images/11.jpeg" class="figure-img img-fluid rounded index-gallery" alt="readers feedback">
+        </div>
+
+    </div>
+
 
 
     <!-- index-3 gallery -->

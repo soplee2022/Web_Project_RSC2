@@ -25,8 +25,17 @@ img {
   max-width: 100%;
 }
 
+li {
+  text-decoration: none;
+  color: #606060;
+}
+li:hover {
+  color: #ffffff;
+}
+
 .navbar {
   font-size: 20px;
+  padding: 2%;
 }
 
 .bg-light-opacity {
@@ -73,6 +82,18 @@ img {
 
 .card-text-center {
   text-align: center;
+}
+
+.diy-index-img {
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+}
+
+.diy-imdex-text1 {
+  font-size: 18px;
+  line-height: 4;
+  margin: 10%;
 }
 
 .index-3 {

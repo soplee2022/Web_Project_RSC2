@@ -54,9 +54,19 @@ img{
     max-width: 100%;
 }
 
+li{
+    text-decoration: none;
+    color: $gray;
+    // ":hover" 滑鼠指向超連結會變色
+    &:hover{
+        color:$white;
+    }
+}
+
 // navbar
 .navbar{
     font-size: $base_font_size*2;
+    padding: 2%;
 }
 
 .bg-light-opacity {
@@ -111,6 +121,24 @@ $card-height: 100%;
 
 .card-text-center{
     text-align: center;
+}
+
+// index-2 reader's feedback
+
+.diy-index-img{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+}
+
+.diy-imdex-text {
+    // padding: 10%;
+}
+
+.diy-imdex-text1 {
+    font-size: $base_font_size*1.8;
+    line-height: $base_line_height*4;
+    margin: 10%;
 }
 
 // index-3 gallery
