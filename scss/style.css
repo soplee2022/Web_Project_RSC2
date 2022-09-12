@@ -85,15 +85,24 @@ li:hover {
 }
 
 .diy-index-img {
-  width: 30%;
+  max-width: 30%;
   height: auto;
   overflow: hidden;
+  border-radius: 0 0 99em 99em;
+  margin-right: 5%;
+}
+
+.diy-container-fluid {
+  padding: 0%;
+}
+
+.diy-imdex-text {
+  padding: 5%;
 }
 
 .diy-imdex-text1 {
   font-size: 18px;
   line-height: 4;
-  margin: 10%;
 }
 
 .index-3 {

@@ -90,7 +90,8 @@
         </figure>
 
         <!-- card -->
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="row row-cols-sm-2 row-cols-md-4 g-4">
+<!-- 待新增：sm 尺寸時，加入 jQ 讓 card 可向右滑動 -->
             <div class="col">
                 <div class="card h-100">
                     <img src="images/08.jpeg" class="card-img-top" alt="...">
@@ -138,18 +139,21 @@
 
     <!-- index-2 (reader's feedback)-->
 
-    <!-- 待解決：Grid system 文：圖 = 2:1 -->
-    <div class="d-flex align-items-center">
+<!-- 待解決：Grid system 文：圖 = 2:1 -->
+<!-- 待處理：img position -->
+    <div class="d-flex align-items-center column">
         <figure class="text-center diy-imdex-text">
-            <blockquote class="blockquote diy-imdex-text1">
-                <p>「讀書會讓閱讀走進生活，也讓我在閱讀中遇見更好的自己。」</p>
+            <blockquote class="diy-imdex-text1">
+                <p>「讀書會讓閱讀走進生活，讓我在閱讀中遇見更好的自己。」</p>
             </blockquote>
             <figcaption class="blockquote-footer">
                 <cite title="Source Title">Reader Jessy</cite>
             </figcaption>
         </figure>
-        <div class="container-fluid diy-index-img">
-            <img src="images/11.jpeg" class="figure-img img-fluid rounded index-gallery" alt="readers feedback">
+        <div class="col-md-auto">
+        </div>
+        <div class="container-fluid diy-container-fluid col-4 diy-index-img">
+            <img src="images/11.jpeg" class="" alt="readers feedback">
         </div>
 
     </div>
