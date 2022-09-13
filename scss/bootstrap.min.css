@@ -213,7 +213,7 @@ dd {
     margin-left: 0;
 }
 blockquote {
-    margin: 0 0 1rem;
+    /* margin: 0 0 1rem; */
 }
 b,
 strong {
@@ -292,7 +292,7 @@ kbd kbd {
     font-size: 1em;
 }
 figure {
-    margin: 0 0 1rem;
+    /* margin: 0 0 1rem; */
 }
 img,
 svg {
@@ -534,8 +534,8 @@ progress {
     margin-bottom: 0;
 }
 .blockquote-footer {
-    margin-top: -1rem;
-    margin-bottom: 1rem;
+    /* margin-top: -1rem;
+    margin-bottom: 1rem; */
     font-size: 0.875em;
     color: #6c757d;
 }
@@ -1851,7 +1851,8 @@ progress {
     }
 }
 .form-label {
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
+    padding: 1rem;
 }
 .col-form-label {
     padding-top: calc(0.375rem + 1px);

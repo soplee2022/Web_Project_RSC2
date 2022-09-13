@@ -16,7 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="/scss/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="scss/all.min.css">
     <!--套用自訂 css-->
     <link href="scss/style.css" rel="stylesheet">
 
@@ -30,12 +32,16 @@
 <body>
 
     <div class="index-bg">
-    <!-- navbar -->
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light-opacity">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="images/logo-v2.png" alt="共同導讀｜RSC2gether 首頁" />
+                </a>
+                <!-- 待處理：RWD 縮小選單置右 -->
+                <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -43,7 +49,7 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="about.html">About</a>
                         </li>
-                    <!-- 下拉選單失效(需檢查 js/jQ 設定) -->
+                        <!-- 下拉選單失效(需檢查 js/jQ 設定) -->
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,7 +68,7 @@
                             <a class="nav-link" href="/booklist.html">Booklist</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="join.html">Join us</a>
+                            <a class="nav-link" href="join.html">Join</a>
                         </li>
                     </ul>
                 </div>
@@ -91,7 +97,7 @@
 
         <!-- card -->
         <div class="row row-cols-sm-2 row-cols-md-4 g-4">
-<!-- 待新增：sm 尺寸時，加入 jQ 讓 card 可向右滑動 -->
+            <!-- 待新增：sm 尺寸時，加入 jQ 讓 card 可向右滑動 -->
             <div class="col">
                 <div class="card h-100">
                     <img src="images/08.jpeg" class="card-img-top" alt="...">
@@ -139,11 +145,9 @@
 
     <!-- index-2 (reader's feedback)-->
 
-<!-- 待解決：Grid system 文：圖 = 2:1 -->
-<!-- 待處理：img position -->
-    <div class="d-flex align-items-center column">
+    <div class="d-flex align-items-center column diy-index-2">
         <figure class="text-center diy-imdex-text">
-            <blockquote class="diy-imdex-text1">
+            <blockquote class="diy-blockquote">
                 <p>「讀書會讓閱讀走進生活，讓我在閱讀中遇見更好的自己。」</p>
             </blockquote>
             <figcaption class="blockquote-footer">
@@ -152,19 +156,22 @@
         </figure>
         <div class="col-md-auto">
         </div>
-        <div class="container-fluid diy-container-fluid col-4 diy-index-img">
-            <img src="images/11.jpeg" class="" alt="readers feedback">
+        <div class="container-fluid diy-container-fluid  diy-index-img diy-fixed-top">
+            <img src="images/17.jpg" class="" alt="readers feedback">
         </div>
 
     </div>
 
+    <div class="diy-box">
+        &nbsp;
+    </div>
 
 
     <!-- index-3 gallery -->
 
     <div class="index-3">
-        <!-- title 無法置頂、置中（設定都跟 index-1 一樣） -->
-        
+        <!-- 待處理：title 無法置頂、置中（設定都跟 index-1 一樣） -->
+
         <div index-3-title>
             <figure class="text-center ">
                 <blockquote class="blockquote">
@@ -202,5 +209,56 @@
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+
+    <footer class="bg-footer text-footer text-center">
+        <div class="container p-4 diy-footer">
+            
+            <!-- icons -->
+            <section class="mb-4">
+                <!-- Facebook (target="_blank" 在新分頁開啟連結)-->
+                <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="https://www.facebook.com/%E5%AD%B8%E8%A1%93%E7%94%A8-%E5%85%B1%E5%90%8C%E5%B0%8E%E8%AE%80rsc2-104344689083677" role="button">
+                    <i class="fa-brands fa-facebook"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="#!" role="button"><i
+                    class="fa-brands fa-instagram"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="#!" role="button"><i
+                    class="fab fa-google"></i></a>
+            </section>
+
+            <!-- newsletter -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                    <p class="pt-2">
+                        Sign up for our newsletter
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label" for="form5Example2">Email address</label>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <!-- Submit btn -->
+                    <button type="submit" class="btn btn-outline-dark diy-btn mb-4">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-footer">
+            © 2022 Copyright:
+            <a class="text-footer" target="_blank" href="https://soplee2022.github.io/">Sophie Lee | rsc2gether.com</a>
+        </div>
+    </footer>
 
 </body>
