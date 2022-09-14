@@ -33,14 +33,29 @@ li:hover {
   color: #ffffff;
 }
 
+.test-border {
+  border: solid;
+}
+
+.cr-margin-padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .logo {
-  width: 20%;
+  width: 18%;
+  height: auto;
+}
+
+.about-logo {
+  width: 50%;
   height: auto;
 }
 
 .navbar {
   font-size: 20px;
   padding: 2%;
+  padding-bottom: 0;
 }
 
 .bg-light-opacity {
@@ -189,12 +204,12 @@ li:hover {
   background-image: url(/images/about-bg-v3.png);
   background-position: center;
   background-size: cover;
-  height: 800px;
+  height: 700px;
 }
 
 .about-p {
   line-height: 0.6;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .about-title {
@@ -207,18 +222,23 @@ li:hover {
   margin: 2rem 0 2rem 0;
 }
 
+.about-hr-2 {
+  border-bottom: solid #606060 0.8px;
+  width: 80%;
+  margin: 1rem 0 1rem 0;
+}
+
 .about-1 {
   border: solid #606060 0.8px;
   padding: 5%;
   margin: 5%;
   margin-left: 20%;
   border-radius: 1rem;
-  width: 50%;
+  width: 60%;
   background-color: #fef5e8;
 }
 
 .about-box {
-  margin-top: 0;
   position: relative;
 }
 
@@ -227,5 +247,36 @@ li:hover {
   height: auto;
   overflow: hidden;
   position: absolute;
-  left: 60%;
+  left: 70%;
+}
+
+.diy-about-2 {
+  border: solid;
+  background-color: #ffffff;
+  padding: 3% 0 3% 0;
+  margin: 0;
+  width: 100%;
+}
+
+.diy-about-2-img {
+  padding: 5%;
+  width: 80%;
+}
+
+.about-box-1 {
+  margin-top: 10%;
+}
+
+.about-rihgt {
+  position: relative;
+}
+
+.about-box-2 {
+  position: absolute;
+  right: 40%;
+  bottom: 40%;
+}
+
+.about-box-3 {
+  margin-top: 50%;
 }/*# sourceMappingURL=style.css.map */
