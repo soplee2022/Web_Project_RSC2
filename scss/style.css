@@ -183,4 +183,49 @@ li:hover {
   color: #b4a091;
   background-color: #ffffff;
   border: solid #b4a091 1px;
+}
+
+.about-bg {
+  background-image: url(/images/about-bg-v3.png);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+.about-p {
+  line-height: 0.6;
+  font-size: 20px;
+}
+
+.about-title {
+  font-size: 28px;
+}
+
+.about-hr {
+  border-bottom: solid #606060 0.8px;
+  width: 80%;
+  margin: 2rem 0 2rem 0;
+}
+
+.about-1 {
+  border: solid #606060 0.8px;
+  padding: 5%;
+  margin: 5%;
+  margin-left: 20%;
+  border-radius: 1rem;
+  width: 50%;
+  background-color: #fef5e8;
+}
+
+.about-box {
+  margin-top: 0;
+  position: relative;
+}
+
+.diy-about-img {
+  max-width: 20%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  left: 60%;
 }/*# sourceMappingURL=style.css.map */

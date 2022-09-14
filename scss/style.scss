@@ -10,6 +10,7 @@ $font-family: 'Montserrat', sans-serif;
 $brown_light: #f0e6dc;
 $brown_dark1: #e6cdb9;
 $white: #ffffff;
+$yellow_light: #fef5e8;
 
 $brown_dark2: #b4a091;
 $gray: #606060;
@@ -62,6 +63,8 @@ li{
         color:$white;
     }
 }
+
+// index
 
 // navbar
 
@@ -227,4 +230,57 @@ $card-height: 100%;
         background-color: $white;
         border: solid $brown_dark2 1px;
     }
+}
+
+// about
+
+.about-bg{
+    background-image:url(/images/about-bg-v3.png);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.about-p{
+    line-height: $base_line_height*0.6;
+    font-size: $base_font_size*2;
+
+}
+
+.about-title{
+    font-size: $base_font_size*2.8;
+    // font-weight: bold;
+}
+
+.about-hr{
+    border-bottom: solid $gray 0.8px ;
+    width: 80%;
+    margin: 2rem 0 2rem 0;
+}
+
+.about-1{
+    border: solid $gray 0.8px;
+    padding: 5%;
+    margin: 5%;
+    margin-left: 20%;
+    border-radius: 1rem;
+    width: 50%;
+    background-color:$yellow_light;
+}
+
+.about-box{
+    margin-top: 0;
+    // border: solid $gray 1px;
+    position: relative;
+    // padding-bottom: 2%;
+}
+
+.diy-about-img{
+    max-width: 20%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    left: 60%;
+    // margin-top: 0;
+    // bottom: 20%;
 }
