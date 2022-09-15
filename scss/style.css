@@ -33,6 +33,21 @@ li:hover {
   color: #ffffff;
 }
 
+.diy-ins {
+  border-bottom: solid #606060 0.8px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.title-box-color {
+  background-color: #ffffff;
+  padding: 3% 3% 0 3%;
+}
+
+.title-box {
+  padding: 3% 3% 0 3%;
+}
+
 .test-border {
   border: solid;
 }
@@ -122,6 +137,10 @@ li:hover {
   margin-right: 5%;
 }
 
+.diy-feedback-position {
+  position: absolute;
+}
+
 .diy-container-fluid {
   padding: 0%;
 }
@@ -201,10 +220,17 @@ li:hover {
 }
 
 .about-bg {
+  background-image: url(/images/about-bg-v5.png);
+  background-position: center;
+  background-size: cover;
+  height: 2000px;
+}
+
+.about-bg2 {
   background-image: url(/images/about-bg-v3.png);
   background-position: center;
   background-size: cover;
-  height: 700px;
+  height: 900px;
 }
 
 .about-p {
@@ -251,9 +277,7 @@ li:hover {
 }
 
 .diy-about-2 {
-  border: solid;
-  background-color: #ffffff;
-  padding: 3% 0 3% 0;
+  padding: 3% 0 10% 0;
   margin: 0;
   width: 100%;
 }
@@ -272,11 +296,62 @@ li:hover {
 }
 
 .about-box-2 {
-  position: absolute;
   right: 40%;
   bottom: 40%;
 }
 
 .about-box-3 {
-  margin-top: 50%;
+  padding-top: 5%;
+}
+
+.diy-ab {
+  position: relative;
+}
+
+.diy-about-3-img {
+  width: 70%;
+  position: relative;
+  right: 20%;
+}
+
+.about-3-box1 {
+  background-color: #ffffff;
+  padding: 3%;
+}
+
+.about-3-box2 {
+  background-color: #fef5e8;
+  padding: 3%;
+}
+
+.about-3-position {
+  padding: 3%;
+}
+
+.about-tm-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.about-tm-img {
+  max-width: 80%;
+  height: auto;
+  overflow: hidden;
+}
+
+.about-4-box1 {
+  background-color: #ffffff;
+  padding: 3%;
+}
+
+.diy-about-4-box {
+  margin: 3% 0 3% 0;
+}
+
+.blog-bg {
+  background-color: #fef5e8;
+}
+
+.diy-blog-carousel {
+  margin: 3% 20% 3% 20%;
 }/*# sourceMappingURL=style.css.map */

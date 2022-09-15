@@ -11,6 +11,7 @@ $brown_light: #f0e6dc;
 $brown_dark1: #e6cdb9;
 $white: #ffffff;
 $yellow_light: #fef5e8;
+$purple_light: #f1e8e3;
 
 $brown_dark2: #b4a091;
 $gray: #606060;
@@ -62,6 +63,22 @@ li{
     &:hover{
         color:$white;
     }
+}
+
+.diy-ins{
+    border-bottom: solid $gray 0.8px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.title-box-color{
+    background-color: $white;
+    padding: 3% 3% 0 3%;
+}
+
+.title-box{
+    // background-color: $white;
+    padding: 3% 3% 0 3%;
 }
 
 .test-border{
@@ -166,6 +183,10 @@ $card-height: 100%;
     margin-right: 5%;
 }
 
+.diy-feedback-position{
+    position: absolute;
+}
+
 .diy-container-fluid{
     padding: 0%;
 }
@@ -250,10 +271,17 @@ $card-height: 100%;
 // about
 
 .about-bg{
+    background-image:url(/images/about-bg-v5.png);
+    background-position: center;
+    background-size: cover;
+    height: 2000px;
+}
+
+.about-bg2{
     background-image:url(/images/about-bg-v3.png);
     background-position: center;
     background-size: cover;
-    height: 700px;
+    height: 900px;
 }
 
 .about-p{
@@ -306,9 +334,8 @@ $card-height: 100%;
 // about-2
 
 .diy-about-2{
-    border: solid;
-    background-color: $white;
-    padding: 3% 0 3% 0;
+    // background-color: $white;
+    padding: 3% 0 10% 0;
     margin: 0;
     width: 100%;
 }
@@ -327,11 +354,81 @@ $card-height: 100%;
 }
 
 .about-box-2{
-    position: absolute;
+    // position: absolute;
     right: 40%;
     bottom: 40%;
 }
 
 .about-box-3{
-    margin-top: 50%;
+    // margin-top: 50%;
+    padding-top: 5%;
 }
+
+.diy-ab{
+    position: relative;
+}
+
+.diy-about-3-img{
+    width: 70%;
+    position:relative;
+    right: 20%;
+}
+
+// about-3
+
+.about-3-box1{
+    background-color: $white;
+    padding: 3%;
+}
+
+.about-3-box2{
+    background-color: $yellow_light;
+    padding: 3%;
+}
+
+.about-3-position{
+    padding: 3%;
+}
+
+.about-tm-title{
+    font-size: $base_font_size*2.4;
+    margin: 0;
+}
+
+.about-tm-img{
+    max-width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+// about-4
+
+.about-4-box1{
+    background-color: $white;
+    padding: 3%;
+}
+
+.diy-about-4-box{
+    margin: 3% 0 3% 0;
+}
+
+// blog
+
+.blog-bg{
+    background-color: $yellow_light;
+}
+
+.diy-blog-carousel{
+    margin: 3% 20% 3% 20%;
+}
+
+// RWD setting
+
+// @media (max-width: 576px) {
+
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px,
+
+// }

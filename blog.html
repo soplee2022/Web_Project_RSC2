@@ -29,7 +29,7 @@
 
 </head>
 
-<body>
+<body class="blog-bg">
 
     <div class="">
         <!-- navbar -->
@@ -75,57 +75,97 @@
             </div>
         </nav>
 
-        <p>This is BLOG</p>
+    <!-- team member title -->
+    <figure class="title-box text-center ">
+        <blockquote class="diy-blockquote">
+            <p class="about-title diy-ins cr-margin-padding">New Post</p>
+        </blockquote>
+    </figure>
     
-        <!-- footer -->
+    <!-- blog-1 carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide diy-blog-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="images/21.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/08.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/10.jpeg" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-        <footer class="bg-footer text-footer text-center">
-            <div class="container p-4 diy-footer">
-                
-                <!-- icons -->
-                <section class="mb-4">
-                    <!-- Facebook (target="_blank" 在新分頁開啟連結)-->
-                    <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="https://www.facebook.com/%E5%AD%B8%E8%A1%93%E7%94%A8-%E5%85%B1%E5%90%8C%E5%B0%8E%E8%AE%80rsc2-104344689083677" role="button">
-                        <i class="fa-brands fa-facebook"></i></a>
-    
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="#!" role="button"><i
-                        class="fa-brands fa-instagram"></i></a>
-    
-                    <!-- Google -->
-                    <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="#!" role="button"><i
-                        class="fab fa-google"></i></a>
-                </section>
-    
-                <!-- newsletter -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-auto">
-                        <p class="pt-2">
-                            Sign up for our newsletter
-                        </p>
-                    </div>
-    
-                    <div class="col-md-5 col-12">
-                        <!-- Email input -->
-                        <div class="form-outline form-white mb-4">
-                            <input type="email" id="form5Example2" class="form-control" />
-                            <label class="form-label" for="form5Example2">Email address</label>
-                        </div>
-                    </div>
-    
-                    <div class="col-auto">
-                        <!-- Submit btn -->
-                        <button type="submit" class="btn btn-outline-dark diy-btn mb-4">
-                            Subscribe
-                        </button>
+    <!-- blog section -->
+    <div class="container-fluid cr-margin-padding ">
+        <div class="row cr-margin-padding">
+            <div class="col-8 test-border">col-8</div>
+            <div class="col-4 test-border">col-4</div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <footer class="bg-footer text-footer text-center">
+        <div class="container p-4 diy-footer">
+            
+            <!-- icons -->
+            <section class="mb-4">
+                <!-- Facebook (target="_blank" 在新分頁開啟連結)-->
+                <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="https://www.facebook.com/%E5%AD%B8%E8%A1%93%E7%94%A8-%E5%85%B1%E5%90%8C%E5%B0%8E%E8%AE%80rsc2-104344689083677" role="button">
+                    <i class="fa-brands fa-facebook"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="#!" role="button"><i
+                    class="fa-brands fa-instagram"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="#!" role="button"><i
+                    class="fab fa-google"></i></a>
+            </section>
+
+            <!-- newsletter -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                    <p class="pt-2">
+                        Sign up for our newsletter
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label" for="form5Example2">Email address</label>
                     </div>
                 </div>
-    
-            <!-- Copyright -->
-            <div class="text-center p-3 bg-footer">
-                © 2022 Copyright:
-                <a class="text-footer" target="_blank" href="https://soplee2022.github.io/">Sophie Lee | rsc2gether.com</a>
+
+                <div class="col-auto">
+                    <!-- Submit btn -->
+                    <button type="submit" class="btn btn-outline-dark diy-btn mb-4">
+                        Subscribe
+                    </button>
+                </div>
             </div>
-        </footer>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-footer">
+            © 2022 Copyright:
+            <a class="text-footer" target="_blank" href="https://soplee2022.github.io/">Sophie Lee | rsc2gether.com</a>
+        </div>
+    </footer>
 
 </body>
