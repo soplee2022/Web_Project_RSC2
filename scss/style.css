@@ -232,10 +232,20 @@ li:hover {
   border: solid #b4a091 1px;
 }
 
+.diy-btn-blog {
+  background-color: #f0e6dc;
+  color: #606060;
+}
+.diy-btn-blog:hover {
+  color: #b4a091;
+  background-color: #ffffff;
+  border: solid #f0e6dc 1px;
+}
+
 .a-tag {
   padding: 0.5rem;
-  margin: 1rem;
-  font-size: 16px;
+  margin: 1rem 4rem 1rem 4rem;
+  font-size: 14px;
   border-radius: 0.3rem;
 }
 
@@ -402,4 +412,31 @@ li:hover {
 
 .post-img-size {
   width: 90%;
+}
+
+.blog-section {
+  padding: 1rem 0 1rem 0;
+}
+
+.blog-donate {
+  padding: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
+  background-color: #f1e8e3;
+}
+
+.text-donate {
+  font-size: 20px;
+}
+
+.donate-text {
+  padding: 2rem;
+}
+
+.video {
+  width: 700;
+  height: auto;
+}
+
+.video-padding {
+  padding: 0 5% 5% 5%;
 }/*# sourceMappingURL=style.css.map */

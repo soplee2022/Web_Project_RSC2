@@ -282,10 +282,20 @@ $card-height: 100%;
     }
 }
 
+.diy-btn-blog{
+    background-color: $brown_light;
+    color: $gray;
+    &:hover{
+        color:$brown_dark2;
+        background-color: $white;
+        border: solid $brown_light 1px;
+    }
+}
+
 .a-tag{
     padding: 0.5rem;
-    margin: 1rem;
-    font-size: $base_font_size*1.6;
+    margin: 1rem 4rem 1rem 4rem;
+    font-size: $base_font_size*1.4;
     border-radius: 0.3rem;
 }
 
@@ -473,6 +483,34 @@ $card-height: 100%;
     width: 90%;
 }
 
+.blog-section{
+    padding: 1rem 0 1rem 0;
+}
+
+.blog-donate{
+    padding: 2rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
+    // border: solid $orange_dark 1px;
+    background-color: $purple_light;
+}
+
+.text-donate{
+    font-size: $base_font_size*2;
+    // margin-bottom: 1rem;
+}
+
+.donate-text{
+    padding: 2rem;
+}
+
+.video{
+    width: 700;
+    height: auto;
+}
+
+.video-padding{
+    padding: 0 5% 5% 5%;
+}
 // RWD setting
 
 // @media (max-width: 576px) {
