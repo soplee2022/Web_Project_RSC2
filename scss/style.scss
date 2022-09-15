@@ -12,7 +12,7 @@ $brown_dark1: #e6cdb9;
 $white: #ffffff;
 $yellow_light: #fef5e8;
 $purple_light: #f1e8e3;
-
+$orange_dark: #e6cdb9;
 $brown_dark2: #b4a091;
 $gray: #606060;
 
@@ -71,6 +71,14 @@ li{
     margin-top: 1rem;
 }
 
+.diy-2ins{
+    border-bottom: solid $brown_dark2 1px;
+    border-top: solid $brown_dark2 1px;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
 .title-box-color{
     background-color: $white;
     padding: 3% 3% 0 3%;
@@ -88,6 +96,32 @@ li{
 .cr-margin-padding{
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.a-ins{
+    color: $gray;
+    // ":hover" 滑鼠指向超連結會變色
+    &:hover{
+        color:$brown_dark2;
+    }
+}
+
+.p-title{
+    font-size: $base_font_size*1.8;
+}
+
+.p-discribe{
+    margin: 1rem 0 1rem 0;
+}
+
+.p-date{
+    font-size: $base_font_size;
+    color: $brown_dark2;
+    margin-top: -1rem;
+}
+
+.bg-white{
+    background-color: $white;
 }
 
 // index
@@ -246,6 +280,13 @@ $card-height: 100%;
         background-color: $white;
         border: solid $brown_dark2 1px;
     }
+}
+
+.a-tag{
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: $base_font_size*1.6;
+    border-radius: 0.3rem;
 }
 
 .btn-outline-dark {
@@ -420,6 +461,16 @@ $card-height: 100%;
 
 .diy-blog-carousel{
     margin: 3% 20% 3% 20%;
+}
+
+// blog-post
+
+.blog-post{
+    padding: 5%;
+}
+
+.post-img-size{
+    width: 90%;
 }
 
 // RWD setting

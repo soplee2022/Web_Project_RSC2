@@ -39,6 +39,14 @@ li:hover {
   margin-top: 1rem;
 }
 
+.diy-2ins {
+  border-bottom: solid #b4a091 1px;
+  border-top: solid #b4a091 1px;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
 .title-box-color {
   background-color: #ffffff;
   padding: 3% 3% 0 3%;
@@ -55,6 +63,31 @@ li:hover {
 .cr-margin-padding {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.a-ins {
+  color: #606060;
+}
+.a-ins:hover {
+  color: #b4a091;
+}
+
+.p-title {
+  font-size: 18px;
+}
+
+.p-discribe {
+  margin: 1rem 0 1rem 0;
+}
+
+.p-date {
+  font-size: 10px;
+  color: #b4a091;
+  margin-top: -1rem;
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 .logo {
@@ -197,6 +230,13 @@ li:hover {
   color: #b4a091;
   background-color: #ffffff;
   border: solid #b4a091 1px;
+}
+
+.a-tag {
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 16px;
+  border-radius: 0.3rem;
 }
 
 .btn-outline-dark {
@@ -354,4 +394,12 @@ li:hover {
 
 .diy-blog-carousel {
   margin: 3% 20% 3% 20%;
+}
+
+.blog-post {
+  padding: 5%;
+}
+
+.post-img-size {
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */
