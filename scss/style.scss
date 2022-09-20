@@ -98,13 +98,13 @@ li{
     padding: 0 !important;
 }
 
-.a-ins{
-    color: $gray;
-    // ":hover" 滑鼠指向超連結會變色
-    &:hover{
-        color:$brown_dark2;
-    }
-}
+// .a-ins{
+//     color: $gray;
+//     // ":hover" 滑鼠指向超連結會變色
+//     &:hover{
+//         color:$brown_dark2;
+//     }
+// }
 
 .p-title{
     font-size: $base_font_size*1.8;
@@ -477,6 +477,23 @@ $card-height: 100%;
 
 .blog-post{
     padding: 5%;
+}
+
+// blog p
+
+.blog-1post p .blog-section p{
+    margin: 1rem 0 1rem 0;
+
+}
+
+// blog a
+
+.blog-1post a, .blog-section a{
+    color: $gray;
+    // ":hover" 滑鼠指向超連結會變色
+    &:hover{
+        color:$brown_dark2;
+    }
 }
 
 .post-img-size{
