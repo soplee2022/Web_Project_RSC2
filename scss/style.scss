@@ -32,9 +32,12 @@ $break_small: 400px;
 
 
 // all page css
-*{
-    font-family: $font-family
+*, *::after, *::before{
+    font-family: $font-family;
+    // 方便計算 div 寬度
+    box-sizing: border-box;
 }
+
 html,body{
     padding: 0px;
     margin: 0px;
