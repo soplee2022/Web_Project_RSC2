@@ -1,7 +1,8 @@
 /* @charset "utf-8" */
 *, *::after, *::before {
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -84,28 +85,9 @@ li:hover {
   background-color: #ffffff;
 }
 
-.logo {
-  width: 18%;
-  height: auto;
-}
-
-.about-logo {
-  width: 50%;
-  height: auto;
-}
-
-.navbar {
-  font-size: 20px;
-  padding: 2%;
-  padding-bottom: 0;
-}
-
-.bg-light-opacity {
-  --bs-bg-opacity: 0;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
-
 .img-fluid-index-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 0%;
@@ -139,6 +121,8 @@ li:hover {
 }
 
 .card-img-top:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -189,78 +173,38 @@ li:hover {
 .index-3 {
   background-color: #e6cdb9;
   padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .index-3-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .index-3-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: start;
-  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .index-gallery {
   padding: 0 5% 0 5%;
-}
-
-.bg-footer {
-  background-color: #f0e6dc;
-}
-
-.text-footer {
-  color: #b4a091;
-}
-
-.diy-btn {
-  background-color: #b4a091;
-  color: #ffffff;
-}
-.diy-btn:hover {
-  color: #b4a091;
-  background-color: #ffffff;
-  border: solid #b4a091 1px;
-}
-
-.diy-btn-blog {
-  background-color: #f0e6dc;
-  color: #606060;
-}
-.diy-btn-blog:hover {
-  color: #b4a091;
-  background-color: #ffffff;
-  border: solid #f0e6dc 1px;
-}
-
-.a-tag {
-  padding: 0.5rem;
-  margin: 1rem 4rem 1rem 4rem;
-  font-size: 14px;
-  border-radius: 0.3rem;
-}
-
-.btn-outline-dark {
-  border: solid #b4a091 1px;
-  --bs-btn-color: $brown_dark2;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: $brown_dark2;
-  --bs-btn-focus-shadow-rgb: 33, 37, 41;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: $brown_dark2;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: $brown_dark2;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: $brown_dark2;
-  --bs-gradient: none;
-}
-.btn-outline-dark:hover {
-  color: #b4a091;
-  background-color: #ffffff;
-  border: solid #b4a091 1px;
 }
 
 .about-bg {
@@ -445,4 +389,80 @@ li:hover {
 
 .video-padding {
   padding: 0 5% 5% 5%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.logo {
+  width: 18%;
+  height: auto;
+}
+
+.about-logo {
+  width: 50%;
+  height: auto;
+}
+
+.navbar {
+  font-size: 20px;
+  padding: 2%;
+  padding-bottom: 0;
+}
+
+.bg-light-opacity {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-footer {
+  background-color: #f0e6dc;
+}
+
+.text-footer {
+  color: #b4a091;
+}
+
+.diy-btn {
+  background-color: #b4a091;
+  color: #ffffff;
+}
+.diy-btn:hover {
+  color: #b4a091;
+  background-color: #ffffff;
+  border: solid #b4a091 1px;
+}
+
+.diy-btn-blog {
+  background-color: #f0e6dc;
+  color: #606060;
+}
+.diy-btn-blog:hover {
+  color: #b4a091;
+  background-color: #ffffff;
+  border: solid #f0e6dc 1px;
+}
+
+.a-tag {
+  padding: 0.5rem;
+  margin: 1rem 4rem 1rem 4rem;
+  font-size: 14px;
+  border-radius: 0.3rem;
+}
+
+.btn-outline-dark {
+  border: solid #b4a091 1px;
+  --bs-btn-color: $brown_dark2;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: $brown_dark2;
+  --bs-btn-focus-shadow-rgb: 33, 37, 41;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: $brown_dark2;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: $brown_dark2;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: $brown_dark2;
+  --bs-gradient: none;
+}
+.btn-outline-dark:hover {
+  color: #b4a091;
+  background-color: #ffffff;
+  border: solid #b4a091 1px;
+}

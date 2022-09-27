@@ -1,37 +1,5 @@
-/* @charset "utf-8" */
-
-// FONT SETTING
-$base_font_size: 10px;
-$base_line_height: 1;
-$base_letter_spacing: 1px;
-$font-family: 'Montserrat', sans-serif;
-
-// MAIN COLOR
-$brown_light: #f0e6dc;
-$brown_dark1: #e6cdb9;
-$white: #ffffff;
-$yellow_light: #fef5e8;
-$purple_light: #f1e8e3;
-$orange_dark: #e6cdb9;
-$brown_dark2: #b4a091;
-$gray: #606060;
-
-// BASE SIZE
-$base_line_width: 2px;
-
-// mixin 使用時機：整包樣式都要一樣的時候，減少重複的行為
-@mixin size($width,$height){
-    width: $width;
-    height: $height;
-}
-
-// BREAK WIDTH （未來 RWD 使用）
-$break_large: 1024px;
-$break_medium: 768px;
-$break_small: 400px;
-
-
 // all page css
+
 *, *::after, *::before{
     font-family: $font-family;
     // 方便計算 div 寬度
@@ -128,29 +96,6 @@ li{
 }
 
 // index
-
-// navbar
-
-.logo{
-    width: 18%;
-    height: auto;
-}
-
-.about-logo{
-    width: 50%;
-    height: auto;
-}
-
-.navbar{
-    font-size: $base_font_size*2;
-    padding: 2%;
-    padding-bottom: 0;
-}
-
-.bg-light-opacity {
-    --bs-bg-opacity: 0;
-    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
 
 // index image
 .img-fluid-index-bg {
@@ -263,63 +208,6 @@ $card-height: 100%;
 }
 .index-gallery{
     padding: 0 5% 0 5%;
-}
-
-// footer
-
-.bg-footer{
-    background-color: $brown_light;
-}
-
-.text-footer{
-    color: $brown_dark2;
-}
-
-.diy-btn{
-    background-color: $brown_dark2;
-    color: $white;
-    &:hover{
-        color:$brown_dark2;
-        background-color: $white;
-        border: solid $brown_dark2 1px;
-    }
-}
-
-.diy-btn-blog{
-    background-color: $brown_light;
-    color: $gray;
-    &:hover{
-        color:$brown_dark2;
-        background-color: $white;
-        border: solid $brown_light 1px;
-    }
-}
-
-.a-tag{
-    padding: 0.5rem;
-    margin: 1rem 4rem 1rem 4rem;
-    font-size: $base_font_size*1.4;
-    border-radius: 0.3rem;
-}
-
-.btn-outline-dark {
-    border: solid $brown_dark2 1px;
-    --bs-btn-color: $brown_dark2;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: $brown_dark2;
-    --bs-btn-focus-shadow-rgb: 33, 37, 41;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: $brown_dark2;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: $brown_dark2;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: $brown_dark2;
-    --bs-gradient: none;
-    &:hover{
-        color:$brown_dark2;
-        background-color: $white;
-        border: solid $brown_dark2 1px;
-    }
 }
 
 // about

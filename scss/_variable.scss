@@ -1,0 +1,26 @@
+/* @charset "utf-8" */
+
+// FONT SETTING
+$base_font_size: 10px;
+$base_line_height: 1;
+$base_letter_spacing: 1px;
+$font-family: 'Montserrat', sans-serif;
+
+// MAIN COLOR
+$brown_light: #f0e6dc;
+$brown_dark1: #e6cdb9;
+$white: #ffffff;
+$yellow_light: #fef5e8;
+$purple_light: #f1e8e3;
+$orange_dark: #e6cdb9;
+$brown_dark2: #b4a091;
+$gray: #606060;
+
+// BASE SIZE
+$base_line_width: 2px;
+
+// mixin 使用時機：整包樣式都要一樣的時候，減少重複的行為
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
