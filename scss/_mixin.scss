@@ -1,0 +1,21 @@
+// Breakpoints
+
+@mixin pad {
+    @media(max-width:786px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:568px) {
+        @content;
+    }
+}
+
+// others
+
+// 使用時機：整包樣式都要一樣的時候，減少重複的行為
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}

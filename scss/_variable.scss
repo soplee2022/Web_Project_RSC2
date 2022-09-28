@@ -18,9 +18,3 @@ $gray: #606060;
 
 // BASE SIZE
 $base_line_width: 2px;
-
-// mixin 使用時機：整包樣式都要一樣的時候，減少重複的行為
-@mixin size($width,$height){
-    width: $width;
-    height: $height;
-}
